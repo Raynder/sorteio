@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js" defer></script>
+    <title>CRUD</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Cadastro de Colaboradores</h1>
+    </header>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarColaborador">Cadastrar Colaborador</button>
+        <table class="records">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="lista">
+                
+            </tbody>
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Editar Colaborador</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form class="modal-form">
+                    <input type="text" class="modal-field" placeholder="Nome do Colaborador" id="nome">
+                    <input type="text" class="modal-field" placeholder="Email do Colaborador" id="email">
+                    <label for="sorteio1">Comercial</label>
+                    <input type="checkbox" class="modal-checkbox" id="sorteio1">
+                    <label for="sorteio2" style="display: none;">Sorteio 2</label>
+                    <input type="checkbox" class="modal-checkbox" id="sorteio2" style="display: none;">
+                    <label for="sorteio3" style="display: none;">Sorteio 3</label>
+                    <input type="checkbox" class="modal-checkbox" id="sorteio3" style="display: none;">
+                    <input type="file" name="arquivo" id="arquivo">
+                </form>
+                <footer class="modal-footer">
+                    <button class="button green">Salvar</button>
+                </footer>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        Copyright &copy; <a style="text-decoration: none;" href="https://github.com/Raynder"> Raynder Cardoso </a>
+    </footer>
+</body>
+</html>
